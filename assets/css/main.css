@@ -3934,6 +3934,33 @@ input, select, textarea {
     font-size: 1rem;
 }
 
+/* --- Tags Styling --- */
+
+/* Tags container */
+.tags {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Individual tag */
+.tag {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 0.4rem 0.8rem;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for tags */
+.tag:hover {
+    background-color: #35425a;
+    color: #fff;
+}
 
 
 
