@@ -3885,31 +3885,38 @@ input, select, textarea {
 
 	}
 
-	/* Sección Bio */
+/* Sección Bio */
 #bio {
     background-color: white;
-    padding: 3rem 2rem;
-    margin-bottom: 3rem; /* Espacio entre Bio y Project 1 */
+    padding: 4rem 2rem; /* Espacio interno más amplio */
+    margin-bottom: 3rem; /* Añade margen entre bio y la siguiente sección */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
 }
 
 #bio header h2 {
     color: #333;
-    margin-bottom: 1.5rem; /* Separación del título */
-    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
 }
 
 #bio .content p {
     color: #666;
     line-height: 1.7;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    max-width: 800px; /* Limita el ancho del texto para que no se extienda demasiado */
     margin-bottom: 2rem;
+    text-align: left; /* Justifica el texto a la izquierda */
 }
 
 #bio .icons {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 1.5rem; /* Espacio entre los íconos */
+    gap: 1.5rem;
+    justify-content: center; /* Centra los íconos */
 }
 
 #bio .icons li a {
@@ -3918,7 +3925,7 @@ input, select, textarea {
 }
 
 #bio .skills-section {
-    margin-top: 2.5rem; /* Espacio adicional antes de las habilidades */
+    margin-top: 2.5rem;
 }
 
 #bio .skills-list {
@@ -3927,12 +3934,14 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center; /* Centra las habilidades */
 }
 
 #bio .skills-list li {
     background-color: #f2f2f2;
-    padding: 0.7rem 1.2rem; /* Ajuste del tamaño de los elementos */
+    padding: 0.7rem 1.2rem;
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
+    text-align: center;
 }
