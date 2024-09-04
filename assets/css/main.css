@@ -3886,88 +3886,72 @@ input, select, textarea {
 	}
 
 
-/* Sección Bio */
+/* Bio Section Styles */
 #bio {
     background-color: white;
-    padding: 5rem 2rem;
+    padding: 4rem 2rem;
+    margin-bottom: 5rem; /* Ensure separation from the next section */
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
-    max-width: 1200px;
-    margin: 0 auto; /* Center the section */
-    margin-bottom: 5rem; /* Add space below the section */
+    text-align: center;
 }
 
 #bio header h2 {
     color: #333;
-    font-size: 2.5rem; /* Adjust the size for the title */
-    margin-bottom: 3rem; /* More space below the title */
-    text-align: center; /* Center the title */
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    letter-spacing: 0.05em;
 }
 
-#bio .content p {
+#bio .bio-content {
+    max-width: 800px;
+    margin-bottom: 4rem;
     color: #666;
-    font-size: 1.25rem;
-    line-height: 1.8;
-    max-width: 900px;
-    margin-bottom: 4rem; /* More space below the bio text */
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: center;
 }
 
 #bio .icons {
+    list-style: none;
+    padding: 0;
     display: flex;
-    gap: 2rem;
-    justify-content: center; /* Center icons */
-    margin-bottom: 4rem; /* Space below the icons */
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 #bio .icons li a {
     color: #333;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-#bio .skills-section {
+.skills-section {
     margin-top: 4rem;
     text-align: center;
 }
 
-#bio .skills-section h3 {
-    font-size: 1.75rem;
-    margin-bottom: 2rem; /* Space below the Skills header */
-}
-
 #bio .skills-list {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the skill items */
+    justify-content: center;
     gap: 1.5rem;
 }
 
 #bio .skills-list li {
     background-color: #f2f2f2;
-    padding: 0.75rem 1.25rem;
+    padding: 0.7rem 1.2rem;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
-    white-space: nowrap; /* Keep skills in one line */
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-    #bio {
-        padding: 3rem 1rem;
-    }
-    #bio header h2 {
-        font-size: 2rem;
-    }
-    #bio .content p {
-        font-size: 1.1rem;
-        line-height: 1.6;
-    }
-    #bio .skills-list li {
-        font-size: 1rem;
-    }
-}
 
 
 
