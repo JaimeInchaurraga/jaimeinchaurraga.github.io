@@ -3934,23 +3934,23 @@ input, select, textarea {
     font-size: 1rem;
 }
 
-/* --- Tags Styling --- */
+/* --- Tags Styling (Reduced Size) --- */
 
 /* Tags container */
 .tags {
     margin-top: 1.5rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 0.3rem; /* Reduce the gap between tags */
 }
 
 /* Individual tag */
 .tag {
     background-color: #e0e0e0;
     color: #333;
-    padding: 0.4rem 0.8rem;
-    border-radius: 12px;
-    font-size: 0.9rem;
+    padding: 0.3rem 0.5rem; /* Reduce padding */
+    border-radius: 8px; /* Slightly smaller border radius */
+    font-size: 0.75rem; /* Reduce font size */
     text-transform: capitalize;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
