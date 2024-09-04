@@ -3885,22 +3885,23 @@ input, select, textarea {
 
 	}
 
+
 /* Sección Bio */
 #bio {
     background-color: white;
     padding: 4rem 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 20rem; /* Añadir más margen inferior para separar las secciones */
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: left; /* Alinear texto a la izquierda */
 }
 
 #bio header h2 {
     color: #333;
-    margin-bottom: 2rem; /* Espacio más amplio debajo del título */
-    font-size: 2rem; /* Tamaño más pequeño para "ABOUT ME" */
-    letter-spacing: 0.05em; /* Espaciado de letras más ajustado */
+    margin-bottom: 2rem; /* Más espacio debajo del título */
+    font-size: 1.5rem; /* Tamaño reducido para "ABOUT ME" */
+    letter-spacing: 0.05em;
 }
 
 #bio .content p {
@@ -3908,8 +3909,7 @@ input, select, textarea {
     line-height: 1.7;
     font-size: 1.2rem;
     max-width: 800px;
-    margin-bottom: 3rem; /* Espacio entre el texto y la siguiente subsección */
-    text-align: left;
+    margin-bottom: 3rem; /* Añadir margen para separar texto de subsecciones */
 }
 
 #bio .icons {
@@ -3917,8 +3917,8 @@ input, select, textarea {
     padding: 0;
     display: flex;
     gap: 1.5rem;
-    justify-content: center;
-    margin-bottom: 3rem; /* Espacio debajo de los iconos */
+    justify-content: flex-start; /* Alinear a la izquierda */
+    margin-bottom: 3rem; /* Añadir espacio debajo de los íconos */
 }
 
 #bio .icons li a {
@@ -3927,7 +3927,7 @@ input, select, textarea {
 }
 
 #bio .skills-section {
-    margin-top: 3rem; /* Espacio mayor entre el texto de la bio y las skills */
+    margin-top: 4rem; /* Añadir más espacio entre el texto de la bio y las skills */
 }
 
 #bio .skills-list {
@@ -3935,8 +3935,8 @@ input, select, textarea {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+    gap: 1.5rem;
+    justify-content: flex-start; /* Alinear a la izquierda */
 }
 
 #bio .skills-list li {
@@ -3947,3 +3947,10 @@ input, select, textarea {
     color: #333;
     text-align: center;
 }
+
+/* Añadir margen inferior a las secciones de skills e iconos */
+.skills-list li,
+.icons li {
+    margin-bottom: 1rem;
+}
+
