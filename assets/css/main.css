@@ -3890,17 +3890,15 @@ input, select, textarea {
 #bio {
     background-color: white;
     padding: 4rem 2rem;
-    margin-bottom: 20rem; /* Añadir más margen inferior para separar las secciones */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left; /* Alinear texto a la izquierda */
+    margin-bottom: 5rem; /* Separar la sección bio de las siguientes */
+    display: block;
+    text-align: center; /* Centrar el título */
 }
 
 #bio header h2 {
     color: #333;
-    margin-bottom: 2rem; /* Más espacio debajo del título */
-    font-size: 1.5rem; /* Tamaño reducido para "ABOUT ME" */
+    margin-bottom: 2rem;
+    font-size: 2rem; /* Ajustar el tamaño del texto del título */
     letter-spacing: 0.05em;
 }
 
@@ -3909,7 +3907,7 @@ input, select, textarea {
     line-height: 1.7;
     font-size: 1.2rem;
     max-width: 800px;
-    margin-bottom: 3rem; /* Añadir margen para separar texto de subsecciones */
+    margin: 0 auto 3rem auto; /* Centrar el párrafo y agregar margen inferior */
 }
 
 #bio .icons {
@@ -3917,8 +3915,8 @@ input, select, textarea {
     padding: 0;
     display: flex;
     gap: 1.5rem;
-    justify-content: flex-start; /* Alinear a la izquierda */
-    margin-bottom: 3rem; /* Añadir espacio debajo de los íconos */
+    justify-content: center; /* Centrar los íconos */
+    margin-bottom: 3rem;
 }
 
 #bio .icons li a {
@@ -3927,7 +3925,8 @@ input, select, textarea {
 }
 
 #bio .skills-section {
-    margin-top: 4rem; /* Añadir más espacio entre el texto de la bio y las skills */
+    margin-top: 4rem;
+    text-align: center; /* Centrar las skills */
 }
 
 #bio .skills-list {
@@ -3936,7 +3935,7 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: flex-start; /* Alinear a la izquierda */
+    justify-content: center; /* Centrar la lista de habilidades */
 }
 
 #bio .skills-list li {
@@ -3946,11 +3945,7 @@ input, select, textarea {
     font-size: 1rem;
     color: #333;
     text-align: center;
+    margin-bottom: 1rem; /* Añadir margen para evitar que se toquen */
 }
 
-/* Añadir margen inferior a las secciones de skills e iconos */
-.skills-list li,
-.icons li {
-    margin-bottom: 1rem;
-}
 
