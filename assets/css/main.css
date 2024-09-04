@@ -3891,8 +3891,6 @@ input, select, textarea {
     background-color: white;
     padding: 5rem 2rem;
     margin-bottom: 10rem;
-    display: flex;
-    justify-content: flex-end; /* Alinear a la derecha */
 }
 
 #bio header h2 {
@@ -3905,23 +3903,16 @@ input, select, textarea {
 
 #bio .bio-content {
     max-width: 800px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: #666;
     font-size: 1.2rem;
     line-height: 1.7;
     text-align: left;
 }
 
-#bio .icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 1.5rem;
-    justify-content: flex-start; /* Iconos a la izquierda */
-}
-
 #bio .skills-section {
-    margin-top: 2rem;
+    margin-top: 2rem; /* Ajustado para que esté justo debajo del texto */
+    margin-bottom: 2rem; /* Espacio entre Skills y el texto */
     text-align: left;
 }
 
@@ -3931,7 +3922,7 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    justify-content: flex-start; /* Alinear las skills */
+    justify-content: flex-start; /* Alinear a la izquierda */
 }
 
 #bio .skills-list li {
@@ -3943,6 +3934,15 @@ input, select, textarea {
     text-align: center;
     margin-bottom: 1rem;
 }
+
+#bio .icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+}
+
 
 
 
