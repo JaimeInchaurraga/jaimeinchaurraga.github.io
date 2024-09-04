@@ -3229,9 +3229,9 @@ input, select, textarea {
 			background-attachment: fixed;
 			background-color: #f08487;
 			background-image: url("images/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg");
-			background-position: -50% 10%;
+			background-position: center center;
 			background-repeat: repeat-y;
-			background-size: 75% auto;
+			background-size: cover;
 			content: '';
 			display: block;
 			height: 100%;
