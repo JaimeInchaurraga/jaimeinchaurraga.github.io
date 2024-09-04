@@ -3888,27 +3888,28 @@ input, select, textarea {
 /* Sección Bio */
 #bio {
     background-color: white;
-    padding: 4rem 2rem; /* Espacio interno más amplio */
-    margin-bottom: 3rem; /* Añade margen entre bio y la siguiente sección */
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra el contenido horizontalmente */
+    align-items: center;
     text-align: center;
 }
 
 #bio header h2 {
     color: #333;
-    margin-bottom: 1.5rem;
-    font-size: 2.5rem;
+    margin-bottom: 2rem; /* Espacio más amplio debajo del título */
+    font-size: 2rem; /* Tamaño más pequeño para "ABOUT ME" */
+    letter-spacing: 0.05em; /* Espaciado de letras más ajustado */
 }
 
 #bio .content p {
     color: #666;
     line-height: 1.7;
     font-size: 1.2rem;
-    max-width: 800px; /* Limita el ancho del texto para que no se extienda demasiado */
-    margin-bottom: 2rem;
-    text-align: left; /* Justifica el texto a la izquierda */
+    max-width: 800px;
+    margin-bottom: 3rem; /* Espacio entre el texto y la siguiente subsección */
+    text-align: left;
 }
 
 #bio .icons {
@@ -3916,7 +3917,8 @@ input, select, textarea {
     padding: 0;
     display: flex;
     gap: 1.5rem;
-    justify-content: center; /* Centra los íconos */
+    justify-content: center;
+    margin-bottom: 3rem; /* Espacio debajo de los iconos */
 }
 
 #bio .icons li a {
@@ -3925,7 +3927,7 @@ input, select, textarea {
 }
 
 #bio .skills-section {
-    margin-top: 2.5rem;
+    margin-top: 3rem; /* Espacio mayor entre el texto de la bio y las skills */
 }
 
 #bio .skills-list {
@@ -3934,7 +3936,7 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: center; /* Centra las habilidades */
+    justify-content: center;
 }
 
 #bio .skills-list li {
