@@ -3357,7 +3357,7 @@ input, select, textarea {
 				}
 
 					#wrapper > section.intro > header > * {
-						margin-left: auto;
+						margin-left: 0;
 					}
 
 					#wrapper > section.intro > header:before {
