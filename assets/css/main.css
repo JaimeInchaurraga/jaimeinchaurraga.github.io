@@ -3886,31 +3886,46 @@ input, select, textarea {
 	}
 
 
-/* Adjusting the width of the bio content */
+/* Sección Bio */
+#bio {
+    background-color: white;
+    padding: 5rem 2rem;
+    margin-bottom: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #bio .bio-content {
-    max-width: 900px; /* Increase the width to take up more space */
-    margin: 0 auto 4rem; /* Centered with proper margin at the bottom */
+    max-width: 900px;
+    margin-bottom: 4rem;
     color: #666;
     font-size: 1.2rem;
     line-height: 1.7;
-    text-align: left; /* Align to the left for better readability */
 }
 
-/* Skills section adjustments */
-#bio .skills-section {
+#bio .icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-start; /* Alinear a la izquierda */
     margin-top: 2rem;
-    text-align: center;
+}
+
+#bio .skills-section {
+    margin-top: 3rem;
+    text-align: left;
 }
 
 #bio .skills-list {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping into multiple lines */
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5rem;
     max-width: 900px;
-    margin: 0 auto; /* Center the skills list */
+    justify-content: flex-start; /* Alinear a la izquierda */
 }
 
 #bio .skills-list li {
@@ -3920,6 +3935,6 @@ input, select, textarea {
     font-size: 1rem;
     color: #333;
     text-align: center;
-    min-width: 120px; /* Set minimum width to make them uniform */
 }
+
 
