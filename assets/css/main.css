@@ -3886,6 +3886,53 @@ input, select, textarea {
 	}
 
 
+/* Section Styles for About Me */
+#about {
+    padding: 4rem 0;
+}
+
+#about header h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#about .content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#about .content p {
+    line-height: 1.8;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+}
+
+#about .icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#about .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+#about .skills-list li {
+    background-color: #f2f2f2;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1rem;
+}
 
 
 
