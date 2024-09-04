@@ -3886,70 +3886,40 @@ input, select, textarea {
 	}
 
 
-/* Bio Section Styles */
-#bio {
-    background-color: white;
-    padding: 5rem 2rem;
-    margin-bottom: 10rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligning content to the left */
-    text-align: left; /* Ensure text alignment to left */
-}
-
-#bio header h2 {
-    color: #333;
-    margin-bottom: 3rem;
-    font-size: 2rem;
-    letter-spacing: 0.05em;
-    width: 100%; /* Ensure that the heading takes full width */
-}
-
+/* Adjusting the width of the bio content */
 #bio .bio-content {
-    max-width: 1000px; /* Adjusted to take more width */
-    margin-bottom: 5rem;
+    max-width: 900px; /* Increase the width to take up more space */
+    margin: 0 auto 4rem; /* Centered with proper margin at the bottom */
     color: #666;
     font-size: 1.2rem;
     line-height: 1.7;
+    text-align: left; /* Align to the left for better readability */
 }
 
-#bio .icons {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 2rem;
-    justify-content: flex-start; /* Aligning icons to the left */
+/* Skills section adjustments */
+#bio .skills-section {
     margin-top: 2rem;
-    margin-bottom: 5rem;
-}
-
-#bio .icons li a {
-    color: #333;
-    font-size: 1.5rem;
-}
-
-.skills-section {
-    margin-top: 4rem; /* Adjusted margin so it's closer to the bio content */
-    width: 100%; /* Take full width for alignment */
-    text-align: left; /* Align text to the left */
+    text-align: center;
 }
 
 #bio .skills-list {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem; /* More space between skill boxes */
-    justify-content: flex-start; /* Aligning skills to the left */
-    width: 100%; /* Ensure it takes full width */
+    flex-wrap: wrap; /* Allow wrapping into multiple lines */
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto; /* Center the skills list */
 }
 
 #bio .skills-list li {
     background-color: #f2f2f2;
-    padding: 0.8rem 1.5rem;
+    padding: 0.7rem 1.2rem;
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
     text-align: center;
-    margin-bottom: 2rem;
+    min-width: 120px; /* Set minimum width to make them uniform */
 }
+
