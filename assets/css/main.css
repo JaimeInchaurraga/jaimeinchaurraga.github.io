@@ -3890,37 +3890,37 @@ input, select, textarea {
 #bio {
     background-color: white;
     padding: 5rem 2rem;
-    margin-bottom: 10rem; /* Increased margin to create more space after the bio section */
+    margin-bottom: 10rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start; /* Aligning content to the left */
+    text-align: left; /* Ensure text alignment to left */
 }
 
 #bio header h2 {
     color: #333;
-    margin-bottom: 3rem; /* Increased space below the "About Me" title */
-    font-size: 2rem; /* You can adjust the font size as needed */
+    margin-bottom: 3rem;
+    font-size: 2rem;
     letter-spacing: 0.05em;
+    width: 100%; /* Ensure that the heading takes full width */
 }
 
 #bio .bio-content {
-    max-width: 800px;
-    margin-bottom: 5rem; /* Increased space between text and skills */
+    max-width: 1000px; /* Adjusted to take more width */
+    margin-bottom: 5rem;
     color: #666;
     font-size: 1.2rem;
     line-height: 1.7;
-    text-align: center;
 }
 
 #bio .icons {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 2rem; /* More space between icons */
-    justify-content: center;
+    gap: 2rem;
+    justify-content: flex-start; /* Aligning icons to the left */
     margin-top: 2rem;
-    margin-bottom: 5rem; /* Increased space between icons and skills */
+    margin-bottom: 5rem;
 }
 
 #bio .icons li a {
@@ -3929,8 +3929,9 @@ input, select, textarea {
 }
 
 .skills-section {
-    margin-top: 20rem; /* Increased space between bio text and skills */
-    text-align: center;
+    margin-top: 4rem; /* Adjusted margin so it's closer to the bio content */
+    width: 100%; /* Take full width for alignment */
+    text-align: left; /* Align text to the left */
 }
 
 #bio .skills-list {
@@ -3938,21 +3939,17 @@ input, select, textarea {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem; /* More space between skill boxes */
+    gap: 1.5rem; /* More space between skill boxes */
+    justify-content: flex-start; /* Aligning skills to the left */
+    width: 100%; /* Ensure it takes full width */
 }
 
 #bio .skills-list li {
     background-color: #f2f2f2;
-    padding: 0.8rem 1.5rem; /* Increased padding for better spacing inside the skill boxes */
+    padding: 0.8rem 1.5rem;
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
     text-align: center;
-    margin-bottom: 2rem; /* Increased space between rows of skills */
+    margin-bottom: 2rem;
 }
-
-
-
-
-
