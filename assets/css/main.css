@@ -3884,3 +3884,55 @@ input, select, textarea {
 		}
 
 	}
+
+	/* Sección Bio */
+#bio {
+    background-color: white;
+    padding: 3rem 2rem;
+    margin-bottom: 3rem; /* Espacio entre Bio y Project 1 */
+}
+
+#bio header h2 {
+    color: #333;
+    margin-bottom: 1.5rem; /* Separación del título */
+    font-size: 2rem;
+}
+
+#bio .content p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+#bio .icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Espacio entre los íconos */
+}
+
+#bio .icons li a {
+    color: #333;
+    font-size: 1.5rem;
+}
+
+#bio .skills-section {
+    margin-top: 2.5rem; /* Espacio adicional antes de las habilidades */
+}
+
+#bio .skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+#bio .skills-list li {
+    background-color: #f2f2f2;
+    padding: 0.7rem 1.2rem; /* Ajuste del tamaño de los elementos */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+}
