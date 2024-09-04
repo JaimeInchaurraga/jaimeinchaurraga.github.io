@@ -3889,8 +3889,8 @@ input, select, textarea {
 /* Bio Section Styles */
 #bio {
     background-color: white;
-    padding: 4rem 2rem;
-    margin-bottom: 5rem; /* Ensure separation from the next section */
+    padding: 5rem 2rem;
+    margin-bottom: 10rem; /* Increased margin to create more space after the bio section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3899,14 +3899,14 @@ input, select, textarea {
 
 #bio header h2 {
     color: #333;
-    margin-bottom: 2rem;
-    font-size: 1.75rem;
+    margin-bottom: 3rem; /* Increased space below the "About Me" title */
+    font-size: 2rem; /* You can adjust the font size as needed */
     letter-spacing: 0.05em;
 }
 
 #bio .bio-content {
     max-width: 800px;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem; /* Increased space between text and skills */
     color: #666;
     font-size: 1.2rem;
     line-height: 1.7;
@@ -3917,10 +3917,10 @@ input, select, textarea {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 1.5rem;
+    gap: 2rem; /* More space between icons */
     justify-content: center;
     margin-top: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem; /* Increased space between icons and skills */
 }
 
 #bio .icons li a {
@@ -3929,7 +3929,7 @@ input, select, textarea {
 }
 
 .skills-section {
-    margin-top: 4rem;
+    margin-top: 20rem; /* Increased space between bio text and skills */
     text-align: center;
 }
 
@@ -3939,18 +3939,19 @@ input, select, textarea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 2rem; /* More space between skill boxes */
 }
 
 #bio .skills-list li {
     background-color: #f2f2f2;
-    padding: 0.7rem 1.2rem;
+    padding: 0.8rem 1.5rem; /* Increased padding for better spacing inside the skill boxes */
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem; /* Increased space between rows of skills */
 }
+
 
 
 
