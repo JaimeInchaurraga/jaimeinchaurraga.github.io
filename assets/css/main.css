@@ -3939,6 +3939,7 @@ input, select, textarea {
 /* Tags container */
 .tags {
     margin-top: 1.5rem;
+    margin-bottom: 2rem; /* Add space between tags and the button */
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem; /* Reduce the gap between tags */
@@ -3961,6 +3962,12 @@ input, select, textarea {
     background-color: #35425a;
     color: #fff;
 }
+
+/* Button (to ensure it's properly spaced from tags) */
+.actions.special {
+    margin-top: 2rem; /* Add additional space above the button */
+}
+
 
 
 
