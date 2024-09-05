@@ -3224,12 +3224,11 @@ input, select, textarea {
 		width: 100vw;
 		padding: 0 0 10rem 0;
 	}
-
+		/* SETTINGS COVER IMAGE */
 		#wrapper:before {
-			background-attachment: fixed;
 			background-color: #596780;
-			background-image: url("../../images/pawel-czerwinski-2PN18U8CKi0-unsplash.jpg");
-			background-position: center center;
+			background-image: url("../../images/cover01.jpg");
+			background-repeat: no-repeat; /* Solo muestra la imagen una vez */
 			background-repeat: repeat-y;
 			background-size: cover;
 			content: '';
