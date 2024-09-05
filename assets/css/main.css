@@ -3227,7 +3227,7 @@ input, select, textarea {
 		/* SETTINGS COVER IMAGE */
 		#wrapper:before {
 			background-color: #596780;
-			background-image: url("../../images/cover01.jpg");
+			background-image: url("../../images/cover02.jpg");
 			background-repeat: no-repeat; /* Solo muestra la imagen una vez */
 			background-repeat: repeat-y;
 			background-size: cover;
