@@ -219,13 +219,17 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    console.log("Datos obtenidos del formulario:", name, email, message);
+    // Establecer un valor de asunto predeterminado
+    const subject = "New message from your website"; // Puedes personalizar este valor
+
+    console.log("Datos obtenidos del formulario:", name, email, message, subject);
 
     // Enviar correo con EmailJS
     emailjs.send('service_sn1y48h', 'template_esq0p2g', {
-        name: name,          // Nombre del remitente
-        email: email,        // Email del remitente
-        message: message     // Mensaje
+        from_name: name,
+        email: email,
+        message: message,
+        subject: subject  // Enviar el asunto
     }).then(function(response) {
         console.log('Correo enviado con éxito', response.status, response.text);
         showConfirmationModal(); // Mostrar el modal de confirmación
@@ -235,27 +239,5 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
     });
 });
 
-// Función para mostrar el modal
-function showConfirmationModal() {
-    const modal = document.getElementById('confirmationModal');
-    const closeButton = document.querySelector('.close-button');
-    
-    console.log("Mostrando modal de confirmación.");
-    modal.style.display = 'block'; // Mostrar el modal
-
-    // Cerrar el modal al hacer clic en el botón de cerrar
-    closeButton.addEventListener('click', function() {
-        modal.style.display = 'none';
-        console.log("Modal cerrado con el botón.");
-    });
-
-    // Cerrar el modal al hacer clic fuera del modal
-    window.addEventListener('click', function(event) {
-        if (event.target === modal) {
-            modal.style.display = 'none';
-            console.log("Modal cerrado al hacer clic fuera.");
-        }
-    });
-}
 
 
