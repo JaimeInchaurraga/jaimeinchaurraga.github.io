@@ -207,23 +207,29 @@
 
 })(jQuery);
 
+// Inicializar EmailJS con tu User ID
+emailjs.init('QPlPH2sQKpxsj-AQQ');
+
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevenir la recarga de la página
 
-    const formData = new FormData(this);
-    const xhr = new XMLHttpRequest();
+    // Obtener datos del formulario
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
 
-    xhr.open('POST', 'https://formkeep.com/f/d70379ab074c', true);
-    
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            showConfirmationModal(); // Mostrar el modal de confirmación
-        } else {
-            alert('Oops! Something went wrong. Please try again later.');
-        }
-    };
-
-    xhr.send(formData); // Enviar los datos del formulario
+    // Enviar correo con EmailJS
+    emailjs.send('service_sn1y48h', 'template_esq0p2g', {
+        name: name,
+        email: email,
+        message: message
+    }).then(function(response) {
+        console.log('Correo enviado con éxito', response.status, response.text);
+        showConfirmationModal(); // Mostrar el modal de confirmación
+    }, function(error) {
+        console.log('Error al enviar el correo', error);
+        alert('Oops! Something went wrong. Please try again later.');
+    });
 });
 
 // Función para mostrar el modal
@@ -245,4 +251,3 @@ function showConfirmationModal() {
         }
     });
 }
-
