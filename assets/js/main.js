@@ -206,3 +206,43 @@
 					});
 
 })(jQuery);
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevenir la recarga de la página
+
+    const formData = new FormData(this);
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('POST', 'https://formkeep.com/f/d70379ab074c', true);
+    
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            showConfirmationModal(); // Mostrar el modal de confirmación
+        } else {
+            alert('Oops! Something went wrong. Please try again later.');
+        }
+    };
+
+    xhr.send(formData); // Enviar los datos del formulario
+});
+
+// Función para mostrar el modal
+function showConfirmationModal() {
+    const modal = document.getElementById('confirmationModal');
+    const closeButton = document.querySelector('.close-button');
+    
+    modal.style.display = 'block'; // Mostrar el modal
+
+    // Cerrar el modal al hacer clic en el botón de cerrar
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    // Cerrar el modal al hacer clic fuera del modal
+    window.addEventListener('click', function(event) {
+        if (event.target === modal) {
+            modal.style.display = 'none';
+        }
+    });
+}
+
