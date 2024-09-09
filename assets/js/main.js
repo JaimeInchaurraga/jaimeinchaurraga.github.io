@@ -223,9 +223,9 @@ document.getElementById('contactForm').addEventListener('submit', function(e) {
 
     // Enviar correo con EmailJS
     emailjs.send('service_sn1y48h', 'template_esq0p2g', {
-        from_name: name,
-        email: email,
-        message: message
+        name: name,          // Nombre del remitente
+        email: email,        // Email del remitente
+        message: message     // Mensaje
     }).then(function(response) {
         console.log('Correo enviado con éxito', response.status, response.text);
         showConfirmationModal(); // Mostrar el modal de confirmación
@@ -257,4 +257,5 @@ function showConfirmationModal() {
         }
     });
 }
+
 
