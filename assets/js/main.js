@@ -207,20 +207,23 @@
 
 })(jQuery);
 
-// Inicializar EmailJS con tu User ID
+// Inicializar EmailJS con tu Public Key
 emailjs.init('QPlPH2sQKpxsj-AQQ');
 
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevenir la recarga de la página
+    console.log("Formulario interceptado, no se ha recargado la página.");
 
     // Obtener datos del formulario
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
+    console.log("Datos obtenidos del formulario:", name, email, message);
+
     // Enviar correo con EmailJS
     emailjs.send('service_sn1y48h', 'template_esq0p2g', {
-        name: name,
+        from_name: name,
         email: email,
         message: message
     }).then(function(response) {
@@ -237,17 +240,21 @@ function showConfirmationModal() {
     const modal = document.getElementById('confirmationModal');
     const closeButton = document.querySelector('.close-button');
     
+    console.log("Mostrando modal de confirmación.");
     modal.style.display = 'block'; // Mostrar el modal
 
     // Cerrar el modal al hacer clic en el botón de cerrar
     closeButton.addEventListener('click', function() {
         modal.style.display = 'none';
+        console.log("Modal cerrado con el botón.");
     });
 
     // Cerrar el modal al hacer clic fuera del modal
     window.addEventListener('click', function(event) {
         if (event.target === modal) {
             modal.style.display = 'none';
+            console.log("Modal cerrado al hacer clic fuera.");
         }
     });
 }
+
