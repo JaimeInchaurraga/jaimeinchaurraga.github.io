@@ -3583,7 +3583,7 @@ input, select, textarea {
 						#wrapper section > footer ul.actions {
 							justify-content: flex-start;
 						}
-
+				/* SETTINGS COVER IMAGE MOBILE */							
 				#wrapper > section {
 					margin: 0;
 				}
@@ -3976,6 +3976,130 @@ input, select, textarea {
     padding: 0.075rem 0.15rem; /* Ajusta el espaciado para que quede proporcionado */
 }
 
+
+
+/* Estilo para la imagen de cabecera (parte derecha) en pantallas grandes */
+.header-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo para la imagen de cabecera (parte derecha) en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .header-image {
+        height: auto;
+        position: relative;
+        background-size: cover; /* Mostrar la imagen completa en pantallas pequeñas */
+        background-position: right center; /* Centrar la imagen en dispositivos móviles */
+    }
+
+    .header-image img {
+        height: auto;
+        position: relative;
+        width: 100%;
+    }
+}
+
+
+/* Ajuste de la imagen de fondo para pantallas grandes */
+#wrapper:before {
+    background-color: #596780;
+    background-image: url("../../images/cover02.jpg");
+    background-repeat: repeat-y; /* Repetir en el eje Y */
+    background-size: cover; /* Asegura que la imagen cubra todo */
+    content: '';
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 50vw;
+    z-index: -1;
+}
+
+/* Ajustes para pantallas móviles */
+@media screen and (max-width: 768px) {
+    #wrapper:before {
+        background-color: #596780;
+        background-image: url("../../images/cover02.jpg");
+        background-repeat: no-repeat; /* No repetir la imagen */
+        background-size: cover; /* Escalar la imagen para que cubra todo */
+        background-position: center; /* Centra la imagen en móviles */
+        width: 100vw; /* Hacer que ocupe todo el ancho de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    /* Elimina el background-attachment: fixed en móviles */
+    #wrapper > section > header {
+        background-attachment: scroll; /* Cambiar de fixed a scroll en móviles */
+        background-color: #596780;
+        background-image: url("../../images/cover02.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+	
+}
+
+/* Ajustes adicionales para asegurar que la imagen se vea en pantallas móviles */
+@media screen and (max-width: 768px) {
+    #wrapper:before {
+        background-size: cover; /* Asegura que la imagen cubra toda el área */
+        background-position: center; /* Centra la imagen en móviles */
+        display: block; /* Mantiene la imagen visible */
+        width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente para no recortar la imagen */
+    }
+
+    #wrapper > section > header {
+        background-attachment: scroll; /* Deshabilita el fondo fijo en móviles */
+        background-color: #596780;
+        background-image: url("../../images/cover02.jpg");
+        background-position: center center; /* Centra la imagen */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-size: cover; /* Cubre todo el área disponible */
+    }
+}
+
+
+/* Ajustes para pantallas intermedias (tablets o tamaños entre móvil y escritorio) */
+@media screen and (min-width: 769px) and (max-width: 1152px) {
+    #wrapper:before {
+        background-color: #596780; /* Mantén el color de fondo */
+        background-image: url("../../images/cover02.jpg"); /* Asegúrate de que la imagen de fondo se cargue */
+        background-repeat: no-repeat; /* No repetir la imagen */
+        background-size: cover; /* Escalar la imagen para que cubra todo */
+        background-position: center; /* Centrar la imagen en este rango de tamaño */
+        width: 100vw; /* Asegura que la imagen ocupe todo el ancho de la pantalla */
+        height: auto; /* Ajusta la altura automáticamente */
+    }
+
+    /* Ajustes para los headers en pantallas intermedias */
+    #wrapper > section > header {
+        background-attachment: scroll; /* Desactiva el fondo fijo */
+        background-color: #596780;
+        background-image: url("../../images/cover02.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: auto; /* Ajusta la altura al contenido */
+    }
+
+    /* Ajuste de contenedores para evitar que el contenido se desborde */
+    #wrapper > section {
+        padding: 0 1rem; /* Ajusta el padding para evitar que el contenido se desborde */
+    }
+
+    .content {
+        max-width: 100%; /* Asegura que el contenido se ajuste al ancho de la pantalla */
+        margin: 0 auto; /* Centra el contenido */
+    }
+}
 
 
 
