@@ -207,37 +207,8 @@
 
 })(jQuery);
 
-// Inicializar EmailJS con tu Public Key
-emailjs.init('QPlPH2sQKpxsj-AQQ');
 
-document.getElementById('contactForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevenir la recarga de la página
-    console.log("Formulario interceptado, no se ha recargado la página.");
 
-    // Obtener datos del formulario
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Establecer un valor de asunto predeterminado
-    const subject = "New message from your website"; // Puedes personalizar este valor
-
-    console.log("Datos obtenidos del formulario:", name, email, message, subject);
-
-    // Enviar correo con EmailJS
-    emailjs.send('service_sn1y48h', 'template_esq0p2g', {
-        from_name: name,
-        email: email,
-        message: message,
-        subject: subject  // Enviar el asunto
-    }).then(function(response) {
-        console.log('Correo enviado con éxito', response.status, response.text);
-        showConfirmationModal(); // Mostrar el modal de confirmación
-    }, function(error) {
-        console.log('Error al enviar el correo', error);
-        alert('Oops! Something went wrong. Please try again later.');
-    });
-});
 
 
 

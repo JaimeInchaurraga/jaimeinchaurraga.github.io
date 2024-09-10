@@ -235,23 +235,20 @@
 
 
 
- <!-- Section: Contact -->
+<!-- Section: Contact -->
 <section>
     <header>
         <h2>Contact Me</h2>
     </header>
     <div class="content">
         <p><strong>How to reach me.</strong> You can send me an email or connect with me via LinkedIn.</p>
-        <form id="contactForm">
+        <form action="https://formkeep.com/f/d70379ab074c" method="POST" enctype="multipart/form-data">
             <div class="fields">
                 <div class="field half">
                     <input type="text" name="name" id="name" placeholder="Name" required />
                 </div>
                 <div class="field half">
                     <input type="email" name="email" id="email" placeholder="Email" required />
-                </div>
-                <div class="field">
-                    <input type="text" name="subject" id="subject" placeholder="Subject" /> <!-- Nuevo campo de Subject -->
                 </div>
                 <div class="field">
                     <textarea name="message" id="message" placeholder="Message" rows="7" required></textarea>
@@ -261,13 +258,6 @@
                 <li><input type="submit" value="Send Message" class="button primary" /></li>
             </ul>
         </form>
-        <!-- Modal de confirmación -->
-        <div id="confirmationModal" class="modal" style="display: none;">
-            <div class="modal-content">
-                <span class="close-button">&times;</span>
-                <p>Your message has been sent successfully!</p>
-            </div>
-        </div>
     </div>
     <footer>
         <ul class="items">
@@ -295,26 +285,17 @@
 </section>
 
 <!-- Copyright -->
-<div class="copyright">&copy; Jaime Inchaurraga. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</div>
+<div class="copyright">&copy; Jaime Inchaurraga. All rights reserved © 2024.</a>.</div>
 
-        </div>
+</div>
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/jquery.scrolly.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        
-        <!-- Cargar EmailJS -->
-        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-        
-        <!-- Inicializar EmailJS -->
-        <script>
-          (function() {
-            emailjs.init('QPlPH2sQKpxsj-AQQ');
-          })();
-        </script>
-        
-        <!-- Tu archivo JS principal -->
-        <script src="assets/js/main.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+
+<!-- Tu archivo JS principal -->
+<script src="assets/js/main.js"></script>
 </html>
+
